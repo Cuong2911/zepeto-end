@@ -1,0 +1,75 @@
+/* header */
+header.header {
+    position: fixed;
+    width: 100%; 
+    height: var(--height-header);
+    background-color: var(--color-primary);
+    color: var(--text-color);
+    z-index: 1000;
+}
+header.header .inner {
+    display: flex;  
+    align-self: center;
+    justify-content:space-between; 
+    height: var(--height-header);
+    max-width: 100%;
+    margin: 0 38px;
+}
+/* logo */
+header.header .header-logo {
+    display: flex;
+    align-items: center;
+}
+header.header .header-logo img {
+    height: 50px;
+}
+/* header right */
+header.header .header-right {
+    display: flex;
+    align-items: center;
+}
+.btn-manage {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 20px;
+    height: 40px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-color);
+    box-sizing: border-box;
+    background-color: transparent;
+    -webkit-box-sizing: border-box;
+}
+.btn-notice {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+
+/* white theme */
+header.header.white-theme {
+    background-color: var(--color-light);
+    color: var(--text-color-light);
+}
+header.header.white-theme a img {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+header.header.white-theme .btn-manage {
+    border: 2px solid var(--border-color-light);
+    color: var(--text-color-light);
+}
+header.header.white-theme .btn-notice {
+    color: var(--text-color-light);
+}
+/* blue theme */
+header.header.blue-theme {
+    background-color: var(--color-primary-1);
+}
+

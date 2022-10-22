@@ -1,0 +1,99 @@
+nav.navbar {
+    position: fixed;
+    top: var(--height-header);
+    bottom: 0;
+    left: 0;
+    background-color:var(--color-primary);
+    color: var(--text-color);
+    width: var(--width-navbar-menu);
+
+}
+nav.navbar .inner {
+    margin: 12px;
+}
+nav.navbar .menu {
+    
+}
+nav.navbar .menu-item {
+    
+}
+nav.navbar .menu-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 12px 12px;
+    margin-bottom: 4px;
+}
+nav.navbar .menu-item:hover .menu-item-link{
+    background-color: var(--color-bg-active);
+    color: var(--text-color-active);
+}
+nav.navbar .menu-item.active .menu-item-link{
+    background-color: var(--color-bg-active);
+    color: var(--text-color-active);
+}
+nav.navbar .menu-item .sub-menu-item-link.active{
+    font-weight: 600;
+    text-decoration: underline;
+}
+nav.navbar .icon{
+    margin-right: 6px;
+}
+nav.navbar .sub-menu {
+    display: none;
+    padding-left: 12px;
+}
+nav.navbar .menu-item:hover .sub-menu{
+    display: block;
+}
+nav.navbar .menu-item.active .icon-down,
+nav.navbar .menu-item:hover .icon-down{
+    transform: rotate(180deg);
+}
+nav.navbar .sub-menu-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 8px 12px;
+}
+nav.navbar .sub-menu-item-link:hover {
+    background-color: var(--color-bg-active);
+    color: var(--text-color-active);
+}
+
+/* white theme */
+nav.navbar.white-theme {
+    background-color:var(--color-light);
+    color: var(--text-color-light);
+}
+nav.navbar.white-theme .menu-item .menu-item-link {
+    color: var(--text-color-light);
+}
+nav.navbar.white-theme .menu-item:hover .menu-item-link {
+    background-color: var(--color-primary);
+    color: var(--text-color);
+}
+nav.navbar.white-theme .sub-menu-item-link {
+    color: var(--text-color-light);
+}
+nav.navbar.white-theme .sub-menu-item-link:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+nav.navbar.white-theme .menu-item.active .menu-item-link{
+    background-color: var(--color-primary);
+    color: var(--text-color);
+}
+/* blue theme */
+nav.navbar.blue-theme {
+    background-color:var(--color-primary-1);
+    color: var(--text-color-light);
+}
+nav.navbar.blue-theme .sub-menu-item-link:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}

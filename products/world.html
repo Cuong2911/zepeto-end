@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="wih2h=device-wih2h, initial-scale=1.0">
+        <title title="ZEPETO studio">ZEPETO studio</title>
+        <!-- link css -->
+        <link rel="icon" type="image/x-icon" href="./assets/images/logos/favicon.ico">
+        <!-- link font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!-- reset css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- base css -->
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <!-- page css -->
+        <link rel="stylesheet" href="../assets/css/page/styles.css">
+        <!-- world css -->
+        <link rel="stylesheet" href="../assets/css/products/worlds.css">
+        <!-- fade-in css -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Swiper CSS -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+      <!-- header -->
+      <header class="header">
+        <div class="inner">
+          <a href="/" class="header-logo">
+            <img src="../assets/images/logos/logo-1.png" alt="logo">
+          </a>
+          <div class="header-right">
+            <a href="/console/auth/signin" class="btn-manage">
+              <span> Manage Contents</span>
+            </a>
+            <a href="/notices" class="btn-notice">
+              <svg wih2h="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="path-1-inside-1" fill="white"><path fill-rule="evenop" clip-rule="evenop" d="M16.0003 3.42859C10.7385 3.42859 6.47307 7.69406 6.47307 12.9558V17.196L4.92087 20.146C4.69127 20.5824 4.57129 21.0681 4.57129 21.5612C4.57129 23.2397 5.93198 24.6003 7.61047 24.6003H24.3893C26.0677 24.6003 27.4284 23.2397 27.4284 21.5612C27.4284 21.0681 27.3085 20.5824 27.0788 20.146L25.5274 17.1975V12.9558C25.5274 7.69405 21.262 3.42859 16.0003 3.42859Z"></path></mask><path d="M6.47307 17.196L8.24302 18.1272C8.39412 17.8401 8.47307 17.5205 8.47307 17.196H6.47307ZM4.92087 20.146L3.15093 19.2147L3.15093 19.2147L4.92087 20.146ZM27.0788 20.146L28.8488 19.2147L28.8488 19.2147L27.0788 20.146ZM25.5274 17.1975H23.5274C23.5274 17.522 23.6064 17.8416 23.7575 18.1287L25.5274 17.1975ZM8.47307 12.9558C8.47307 8.79863 11.8431 5.42859 16.0003 5.42859V1.42859C9.63397 1.42859 4.47307 6.58949 4.47307 12.9558H8.47307ZM8.47307 17.196V12.9558H4.47307V17.196H8.47307ZM6.69082 21.0773L8.24302 18.1272L4.70313 16.2647L3.15093 19.2147L6.69082 21.0773ZM6.57129 21.5612C6.57129 21.3926 6.61231 21.2265 6.69082 21.0773L3.15093 19.2147C2.77022 19.9383 2.57129 20.7436 2.57129 21.5612H6.57129ZM7.61047 22.6003C7.03654 22.6003 6.57129 22.1351 6.57129 21.5612H2.57129C2.57129 24.3442 4.82741 26.6003 7.61047 26.6003V22.6003ZM24.3893 22.6003H7.61047V26.6003H24.3893V22.6003ZM25.4284 21.5612C25.4284 22.1351 24.9632 22.6003 24.3893 22.6003V26.6003C27.1723 26.6003 29.4284 24.3442 29.4284 21.5612H25.4284ZM25.3089 21.0773C25.3874 21.2265 25.4284 21.3926 25.4284 21.5612H29.4284C29.4284 20.7436 29.2295 19.9383 28.8488 19.2147L25.3089 21.0773ZM23.7575 18.1287L25.3089 21.0773L28.8488 19.2147L27.2974 16.2662L23.7575 18.1287ZM23.5274 12.9558V17.1975H27.5274V12.9558H23.5274ZM16.0003 5.42859C20.1574 5.42859 23.5274 8.79862 23.5274 12.9558H27.5274C27.5274 6.58948 22.3665 1.42859 16.0003 1.42859V5.42859Z" fill="white" mask="url(#path-1-inside-1)"></path><path d="M12.2959 24.6005C12.2959 26.6622 13.9666 28.3085 16.0009 28.3085C18.0353 28.3085 19.7059 26.6622 19.7059 24.6005" stroke="white" stroke-wih2h="2"></path></svg>
+            </a>
+          </div>
+        </div>
+        
+      </header>
+      <!-- navbar menu -->
+      <nav class="navbar">
+        <div class="inner">
+          <ul class="menu">
+            <li class="menu-item active">
+              <a class="menu-item-link">
+                <div>
+                  <span class="icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                  </span>
+                  Contents
+                </div>
+                <span class="icon-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="sub-menu show">
+                <li class="">
+                  <a class="sub-menu-item-link" href="/products/item.html">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-shirt"></i>
+                      </span>
+                      Items
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                  <a class="sub-menu-item-link active" href="/products/world.html">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-earth-asia"></i>
+                      </span>
+                      Worlds
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                  <a class="sub-menu-item-link" href="/products/live.html">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-wifi"></i>
+                      </span>
+                      Live
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                  <a class="sub-menu-item-link" href="/products/buildit.html">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-wrench"></i>
+                      </span>
+                      Build it
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="/program/creator.html">
+                <div>
+                  <span class="icon">
+                    <i class="fa-solid fa-square-plus"></i>
+                  </span>
+                  Creator Program
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="/bussiness.html">
+                <div>
+                  <span class="icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </span>
+                  Business
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link">
+                <div>
+                  <span class="icon">
+                    <i class="fa-sharp fa-solid fa-circle-question"></i>
+                  </span>
+                  Guides
+                </div>
+                <span class="icon-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="sub-menu">
+                <li class="">
+                  <a class="sub-menu-item-link">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-sharp fa-solid fa-circle-question"></i>
+                      </span>
+                      Guides
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                  <a class="sub-menu-item-link" href="https://www.udemy.com/user/artxcampus2/">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </span>
+                      Learn
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="https://support.zepeto.me/hc/en-us">
+                <div>
+                  <span class="icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>
+                  Support
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- main -->
+      <main class="page">
+        <div class="container">
+          <!-- main home -->
+          <div class="main-home">
+            <div class="bg-home">
+              <video 
+                muted
+                class="bg-video" 
+                src="../assets/images/template-editor-vd.mp4" 
+                autoplay="" 
+                playsinline="" 
+                loop=""
+              >
+                <source src="../assets/images/template-editor-vd.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="inner">
+              <div class="content-text">
+                <h2 class="content-title color-white" data-aos="fade-up" data-aos-duration="1000">
+                  <span>Your Imagination <br> becomes Reality.</span>
+                </h2>
+                <a class="btn-link btn-bg-white" data-aos="fade-up" data-aos-duration="1000" href="/console">
+                  Create a World
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- template editor -->
+          <section class="experience">
+            <div class="inner">
+              <!-- content text -->
+              <div class="content-text">
+                <h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">
+                  Endivessly expanding World.
+                </h2>
+                <p class="content-desc" data-aos="fade-up" data-aos-duration="1000">
+                  300 million users experience diverse adventures in World.
+                  <br>
+                  Use your imagination to expand the world of ZEPETO.
+                </p>
+              </div>
+              <!-- card list -->
+              <ul class="card-list" data-aos="fade-up" data-aos-duration="1000">
+                <li class="card-item">
+                    <div class="img-box">
+                      <img src="../assets/images/world/map.jpg">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">
+                        Adventure
+                      </h2>
+                      <p class="card-text">
+                        Go beyond reality, and create a World filled with fun and inspiration.
+                      </p>
+                    </div>
+                </li>
+                <li class="card-item">
+                    <div class="img-box">
+                      <img src="../assets/images/world/com.jpg">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">
+                        Communication
+                      </h2>
+                      <p class="card-text">
+                        Create a World where more users can communicate in fun ways
+                      </p>
+                    </div>
+                </li>
+                <li class="card-item">
+                    <div class="img-box">
+                      <img src="../assets/images/world/rank.jpg">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">
+                        Challenge
+                      </h2>
+                      <p class="card-text">
+                        Create an interesting World to spark the desire for challange.
+                      </p>
+                    </div>
+                </li>
+              </ul>
+              
+            </div>
+          </section>
+          <!-- world -->
+          <section class="world">
+            <div class="inner">
+              <!-- content text -->
+              <div class="content-text">
+                <h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">
+                  Become a World Creator.
+                </h2>
+                <p class="content-desc" data-aos="fade-up" data-aos-duration="1000">
+                  Millions of users visit the ZEPETO World daily. 
+                  <br>
+                  Create a popular world sparkling with fresh ideas.
+                </p>
+              </div>
+              <!-- slide box -->
+              <div class="slide-box" data-aos="fade-up" data-aos-duration="1000">
+                <div class="slide-container swiper">
+                  <div class="slide-content">
+                      <div class="card-wrapper swiper-wrapper">
+                          <div class="card swiper-slide">
+                              <div class="image-content">
+                                  <div class="card-image">
+                                    <img src="../assets/images/world/gif/1.gif" alt="">
+                                  </div>
+                                  <div class="card-content">
+                                      <h2 class="name">Find Match</h2>
+                                      <p>Form a team of 5 Participants in a summoner's rift match</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card swiper-slide">
+                              <div class="image-content">
+                                  <div class="card-image">
+                                    <img src="../assets/images/world/gif/2.gif" alt="">
+                                  </div>
+                                  <div class="card-content">
+                                      <h2 class="name">Ban and Pick</h2>
+                                      <p>The current pick and ban system in any Riot Games LoL tournament works by banning three champions on each side, then picking three champions as well, and then banning two more, before rounding up the final two picks</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card swiper-slide">
+                              <div class="image-content">
+                                  <div class="card-image">
+                                    <img src="../assets/images/world/gif/3.gif" alt="">
+                                  </div>
+                                  <div class="card-content">
+                                      <h2 class="name">Fight</h2>
+                                      <p>start the match, take control of the target and engage in combat to destroy the opponent's house</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card swiper-slide">
+                              <div class="image-content">
+                                  <div class="card-image">
+                                    <img src="../assets/images/world/gif/4.gif" alt="">
+                                  </div>
+                                  <div class="card-content">
+                                      <h2 class="name">Win the Game!</h2>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- money -->
+          <section class="money" data-aos="fade-up" data-aos-duration="1000">
+            <div class="inner">
+              <!-- content-text -->
+              <div class="content-text">
+                <h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">
+                  Profits through World products.
+                </h2>
+                <p class="content-desc" data-aos="fade-up" data-aos-duration="1000">
+                  You can sell various world products in the world you've created.
+                  <br>
+                  Increase your profits by selling World products.
+                </p>
+              </div>
+              <!-- background -->
+              <div class="video-box" data-aos="fade-up" data-aos-duration="1000">
+                <video 
+                  playsinline="" 
+                  autoplay="" 
+                  muted="" 
+                  loop=""
+                >
+                  <source src="https://studio.zepeto.me/video/world_money_video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </section>
+          <!-- get-start -->
+          <section class="get-start">
+            <div class="inner">
+              <div class="content-text">
+                <h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">
+                  Become a ZEPETO Creator.
+                </h2>
+                <a class="btn-more" data-aos="fade-up" data-aos-duration="1000" href="/console">
+                  <span class="text">
+                    Get started
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-nav">
+            <ul class="footer-nav-left">
+              <li>
+                <a href="/terms">
+                  Terms of use
+                </a>
+              </li>
+              <li>
+                <a href="https://support.zepeto.me/hc/en-us/articles/360050411493">
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <a href="https://support.zepeto.me">
+                  Contact us
+                </a>
+              </li>
+              <li>
+                <a href="/credits">
+                  Credits
+                </a>
+              </li>
+            </ul>
+            <!-- social -->
+            <ul class="footer-nav-right">
+              <li>
+                <a href="https://www.instagram.com/zepeto.official/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/zepeto_official">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/c/ZEPETO_official">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@zepeto.official.tt">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="copy global-show">© NAVER Z Corp. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".slide-content", {
+          // autoplay: {
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // },
+          slidesPerView: 2,
+          spaceBetween: 25,
+          loop: true,
+          centerSlide: 'true',
+          fade: 'true',
+          grabCursor: 'true',
+          centeredSlides: 'true',
+          breakpoints:{
+              0: {
+                  slidesPerView: 1,
+              },
+              960: {
+                  slidesPerView: 2,
+              },
+          },
+        });
+      </script>
+      
+    </body>
+</html>

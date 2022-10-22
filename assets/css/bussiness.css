@@ -1,0 +1,120 @@
+.main-home.bussiness  {
+    height: 545px;
+}
+.main-home.bussiness img  {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* text-with-img */
+.text-visual {
+    margin-top: 16px;
+}
+.text-visual .inner {
+    max-width: 1264px;
+    padding: 0px 40px;
+    height: 447px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* content text */
+.text-visual .inner .content-text {
+    text-align: start;
+    padding: 24px;
+    max-width: 500px;
+}
+.text-visual .inner .content-sub-title {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    opacity: 0;
+}
+.text-visual .inner .content-title {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+}
+/* content visual */
+.text-visual .inner .content-visual {
+    margin-top: 16px;
+    font-size: 48px;
+    line-height: 60px;
+    animation-delay: 0.2s;
+    padding: 24px;
+    max-width: 500px;
+}
+.text-visual .inner .content-visual img {
+    width: 100%;
+    height: 100%;
+}
+.stories .inner {
+    padding: 0;
+}
+/* tag box */
+.stories-box {
+    margin: 88px auto 0px;
+    max-width: 1032px;
+}
+.stories-box .tag-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+}
+.stories-box .tag-item {
+    display: flex;
+    width: 320px;
+    max-width: 1032px;
+}
+.stories-box .tag-content {
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 0 10px #cacaca;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.stories-box .tag-icon {
+    width: 84px;
+    height: 84px;
+    background-size: 84px 84px;
+}
+.stories-box .tag-icon img {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.stories-box .tag-info {
+    max-width: 240px;
+    margin: 0px auto;
+    padding: 16px 8px 0;
+    text-align: start;
+}
+.stories-box .tag-title {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.stories-box .tag-desc {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 8px auto 0px;
+    color: rgb(92, 92, 97);
+}
+.stories-box .tag-img {
+    margin-top: 16px;
+    height: 150px;
+    overflow: hidden;
+    border-radius:4px;
+}
+.stories-box .tag-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

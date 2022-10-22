@@ -1,0 +1,150 @@
+/* experience */
+.experience .inner {
+    padding: 120px 40px 80px;
+}
+.experience .card-list {
+    font-size: 0;
+    margin: 88px auto 0;
+    opacity: 0;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.experience .card-item {
+    width: 320px;
+    height: 395px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(211, 211, 211);
+}
+.experience .card-item .img-box{
+    width: 100%;
+    height: 217px;
+}
+.experience .card-item .img-box img{
+    height: 100%;
+}
+.experience .card-item .card-info{
+    text-align: left;
+    padding: 28px 32px 32px;
+}
+.experience .card-item .card-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+}
+.experience .card-item .card-text {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #5c5c61;
+}
+/* world */
+.world .inner {
+    max-width: 100%;
+    padding: 96px 0 172px;
+}
+/* slide */
+.world .slide-box {
+    opacity: 0;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.slide-container{
+    max-width: 1040px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 24px;
+    overflow: hidden;
+}
+.card {
+    width: 480px !important;
+    height: 415px !important;
+    margin-left: 12px !important;
+    margin-right: 0px !important;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    overflow: hidden;
+}
+.image-content{
+    position: relative;
+    height: 470px;
+    justify-content: center;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.card-content {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    align-items: flex-start;
+}
+.card-content p {
+    margin-top: 12px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-align: start;
+}
+.card-image {
+    position: relative;
+    height: 415px;
+    width: 100%;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+.card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 10px #000;
+    border-radius: 8px;
+}
+.name{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+.card.swiper-slide-active {
+    width: 570px !important;
+    height: 470px !important;
+}
+
+.card.swiper-slide-active .card-image {
+    width: 100%;
+    height: 470px;
+}
+.card.swiper-slide-active .card-content {
+    display: flex;
+}
+
+/* money */
+.money .video-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.money .video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

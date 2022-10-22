@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title title="ZEPETO studio">ZEPETO studio</title>
+        <!-- link css -->
+        <link rel="icon" type="image/x-icon" href="./assets/images/logos/favicon.ico">
+        <!-- link font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!-- reset css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- base css -->
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <!-- page css -->
+        <link rel="stylesheet" href="../assets/css/page/styles.css">
+        <!-- item css -->
+        <link rel="stylesheet" href="../assets/css/program/creator.css">
+        <!-- fade-in css -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Swiper CSS -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+      <!-- header -->
+      <header class="header white-theme">
+        <div class="inner">
+          <a href="/" class="header-logo">
+            <img src="../assets/images/logos/logo-1.png" alt="logo">
+          </a>
+          <div class="header-right">
+            <a href="/console/auth/signin" class="btn-manage">
+              <span> Manage Contents</span>
+            </a>
+            <a href="/notices" class="btn-notice">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="path-1-inside-1" fill="white"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.0003 3.42859C10.7385 3.42859 6.47307 7.69406 6.47307 12.9558V17.196L4.92087 20.146C4.69127 20.5824 4.57129 21.0681 4.57129 21.5612C4.57129 23.2397 5.93198 24.6003 7.61047 24.6003H24.3893C26.0677 24.6003 27.4284 23.2397 27.4284 21.5612C27.4284 21.0681 27.3085 20.5824 27.0788 20.146L25.5274 17.1975V12.9558C25.5274 7.69405 21.262 3.42859 16.0003 3.42859Z"></path></mask><path d="M6.47307 17.196L8.24302 18.1272C8.39412 17.8401 8.47307 17.5205 8.47307 17.196H6.47307ZM4.92087 20.146L3.15093 19.2147L3.15093 19.2147L4.92087 20.146ZM27.0788 20.146L28.8488 19.2147L28.8488 19.2147L27.0788 20.146ZM25.5274 17.1975H23.5274C23.5274 17.522 23.6064 17.8416 23.7575 18.1287L25.5274 17.1975ZM8.47307 12.9558C8.47307 8.79863 11.8431 5.42859 16.0003 5.42859V1.42859C9.63397 1.42859 4.47307 6.58949 4.47307 12.9558H8.47307ZM8.47307 17.196V12.9558H4.47307V17.196H8.47307ZM6.69082 21.0773L8.24302 18.1272L4.70313 16.2647L3.15093 19.2147L6.69082 21.0773ZM6.57129 21.5612C6.57129 21.3926 6.61231 21.2265 6.69082 21.0773L3.15093 19.2147C2.77022 19.9383 2.57129 20.7436 2.57129 21.5612H6.57129ZM7.61047 22.6003C7.03654 22.6003 6.57129 22.1351 6.57129 21.5612H2.57129C2.57129 24.3442 4.82741 26.6003 7.61047 26.6003V22.6003ZM24.3893 22.6003H7.61047V26.6003H24.3893V22.6003ZM25.4284 21.5612C25.4284 22.1351 24.9632 22.6003 24.3893 22.6003V26.6003C27.1723 26.6003 29.4284 24.3442 29.4284 21.5612H25.4284ZM25.3089 21.0773C25.3874 21.2265 25.4284 21.3926 25.4284 21.5612H29.4284C29.4284 20.7436 29.2295 19.9383 28.8488 19.2147L25.3089 21.0773ZM23.7575 18.1287L25.3089 21.0773L28.8488 19.2147L27.2974 16.2662L23.7575 18.1287ZM23.5274 12.9558V17.1975H27.5274V12.9558H23.5274ZM16.0003 5.42859C20.1574 5.42859 23.5274 8.79862 23.5274 12.9558H27.5274C27.5274 6.58948 22.3665 1.42859 16.0003 1.42859V5.42859Z" fill="#47474D" mask="url(#path-1-inside-1)"></path><path d="M12.2959 24.6005C12.2959 26.6622 13.9666 28.3085 16.0009 28.3085C18.0353 28.3085 19.7059 26.6622 19.7059 24.6005" stroke="#47474D" stroke-width="2"></path></svg>
+            </a>
+          </div>
+        </div>
+        
+      </header>
+      <!-- navbar menu -->
+      <nav class="navbar white-theme">
+        <div class="inner">
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-item-link">
+                <div>
+                  <span class="icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                  </span>
+                  Contents
+                </div>
+                <span class="icon-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="sub-menu">
+                <li class="">
+                  <a class="sub-menu-item-link" href="/products/item.html">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-shirt"></i>
+                      </span>
+                      Items
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                  <a class="sub-menu-item-link" href="/products/world.html">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-earth-asia"></i>
+                      </span>
+                      Worlds
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                  <a class="sub-menu-item-link" href="/products/live.html">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-wifi"></i>
+                      </span>
+                      Live
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                  <a class="sub-menu-item-link" href="/products/buildit.html">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-wrench"></i>
+                      </span>
+                      Build it
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item active">
+              <a class="menu-item-link" href="/program/creator.html">
+                <div>
+                  <span class="icon">
+                    <i class="fa-solid fa-square-plus"></i>
+                  </span>
+                  Creator Program
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="/bussiness.html">
+                <div>
+                  <span class="icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </span>
+                  Business
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link">
+                <div>
+                  <span class="icon">
+                    <i class="fa-sharp fa-solid fa-circle-question"></i>
+                  </span>
+                  Guides
+                </div>
+                <span class="icon-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </a>
+              <ul class="sub-menu">
+                <li class="">
+                  <a class="sub-menu-item-link">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-sharp fa-solid fa-circle-question"></i>
+                      </span>
+                      Guides
+                    </div>
+                  </a>
+                </li>
+                <li class="">
+                  <a class="sub-menu-item-link" href="https://www.udemy.com/user/artxcampus2/">
+                    <div>
+                      <span class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </span>
+                      Learn
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="https://support.zepeto.me/hc/en-us">
+                <div>
+                  <span class="icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>
+                  Support
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- main -->
+      <main class="page">
+        <div class="container">
+          <!-- main home -->
+          <div class="main-home creator">
+            <div class="inner">
+              <div class="content-text">
+                <h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">
+                  <span>ZEPETO Official Creator Program</span>
+                </h2>
+                <p class="content-desc" data-aos="fade-up" data-aos-duration="1000">
+                    We are calling for creators to grow with ZEPETO.
+                    <br>
+                    Check out the special benefits for our creators!
+                </p>
+                <a class="btn-link btn-apply" data-aos="fade-up" data-aos-duration="1000" href="/console">
+                  Apply now
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- tag box -->
+          <section class="tag-box">
+            <div class="inner">
+                <ul class="tag-list" data-aos="fade-up" data-aos-duration="1000">
+                    <li class="tag-item">
+                        <div class="tag-content">
+                            <!-- tag icon -->
+                            <div class="tag-icon">
+                                <img src="https://studio.zepeto.me/img/img_creator_contents1_01.png" alt="benefit-img">
+                            </div>
+                            <!-- tag info -->
+                            <div class="tag-info">
+                                <div class="tag-title">Verified Badge</div>
+                                <p class="tag-desc">Receive an official “Verified” badge on your ZEPETO account to stand out from the crowd.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag-item">
+                        <div class="tag-content">
+                            <!-- tag icon -->
+                            <div class="tag-icon">
+                                <img src="https://studio.zepeto.me/img/img_creator_contents1_02.png" alt="benefit-img">
+                            </div>
+                            <!-- tag info -->
+                            <div class="tag-info">
+                                <div class="tag-title">Promotional Links</div>
+                                <p class="tag-desc">Unlock the ability to link to your other channels and content right from your posts on ZEPETO.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag-item">
+                        <div class="tag-content">
+                            <!-- tag icon -->
+                            <div class="tag-icon">
+                                <img src="https://studio.zepeto.me/img/img_creator_contents1_03.png" alt="benefit-img">
+                            </div>
+                            <!-- tag info -->
+                            <div class="tag-info">
+                                <div class="tag-title">Content Promotion</div>
+                                <p class="tag-desc">Increased promotion of your content on the ZEPETO app and on ZEPETO’s official social media accounts.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag-item">
+                        <div class="tag-content">
+                            <!-- tag icon -->
+                            <div class="tag-icon">
+                                <img src="https://studio.zepeto.me/img/img_creator_contents1_04.png" alt="benefit-img">
+                            </div>
+                            <!-- tag info -->
+                            <div class="tag-info">
+                                <div class="tag-title">Slots and ZEMs</div>
+                                <p class="tag-desc">Earn more avatar slots and regularly receive ZEMs to help you create more content.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag-item">
+                        <div class="tag-content">
+                            <!-- tag icon -->
+                            <div class="tag-icon">
+                                <img src="https://studio.zepeto.me/img/img_creator_contents1_05.png" alt="benefit-img">
+                            </div>
+                            <!-- tag info -->
+                            <div class="tag-info">
+                                <div class="tag-title">One on One Care</div>
+                                <p class="tag-desc">Work directly with the ZEPETO Creators Team to ask questions and receive guidance.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag-item">
+                        <div class="tag-content">
+                            <!-- tag icon -->
+                            <div class="tag-icon">
+                                <img src="https://studio.zepeto.me/img/img_creator_contents1_06.png" alt="benefit-img">
+                            </div>
+                            <!-- tag info -->
+                            <div class="tag-info">
+                                <div class="tag-title">Exclusive Invitations</div>
+                                <p class="tag-desc">Join us for various online and offline ZEPETO Official Creator events and workshops.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </section>
+          <!-- selections -->
+          <section class="selections">
+            <div class="inner">
+                <!-- content title -->
+                <div class="title" data-aos="fade-up" data-aos-duration="1000">
+                    Selection criteria for ZEPETO Official Creators
+                </div>
+                <!-- selec list -->
+                <ul class="selec-list" data-aos="fade-up" data-aos-duration="1000">
+                    <li class="selec-item">
+                        <div><span class="number">1</span></div>
+                        <div class="selec-desc">
+                            <p>Create content regularly on ZEPETO such as: Items, Worlds, Photos, Videos, etc.</p>
+                        </div>
+                    </li>
+                    <li class="selec-item">
+                        <div><span class="number">2</span></div>
+                        <div class="selec-desc">
+                            <p>50,000+ followers on ZEPETO or 1,000+ followers on social media: YouTube, Instagram, TikTok, Twitch, Facebook and Twitter</p>
+                        </div>
+                    </li>
+                    <li class="selec-item">
+                        <div><span class="number">3</span></div>
+                        <div class="selec-desc">
+                            <p>At least one post made on ZEPETO or on social media within the last 30 days.</p>
+                        </div>
+                    </li>
+                    <li class="selec-item">
+                        <div><span class="number">4</span></div>
+                        <div class="selec-desc">
+                            <p>No history of being restricted or sanctioned for violating ZEPETO Community Guidelines within the past 6 months.</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- img -->
+                <div class="img-box" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="../assets/images/program/creator-selections.png" alt="">
+                </div>
+            </div>
+          </section>
+          <!-- faq -->
+          <section class="faq">
+            <div class="inner">
+                <!-- title -->
+                <h2 class="title" data-aos="fade-up" data-aos-duration="1000">FAQ</h2>
+                <!-- faq-box -->
+                <div class="faq-box" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>What if I don’t meet the eligibility criteria?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            Application may be rejected if the criteria for screening are not met when applying for the Program. Please review the checklist of screening criteria first before applying.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>If I apply to become an Official Creator and meet the requirements, will I hear a response right away?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            Please fill in the application form according to the instructions. Failure to follow the instructions may result in a rejection when we screen your application.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>What are the major social media platforms that are evaluated during the selection period?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            Major social media platform are YouTube, Instagram, Twitch, Facebook, and TikTok.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>Can only individuals apply?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            Anyone who wants to grow with ZEPETO, such as an individual or influencer, MCN, studios, and companies, can apply.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>Is there an age limit?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            At this time, children are not eligible to join the ZEPETO Official Creator Program. Applications received from minors may be rejected.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>What happens if my follower count drops below the requirement after I apply?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            Application may be rejected if the follower count is insufficient at the time of screening.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>How will the review period and approval process proceed?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            The screening process may take up to 30 days, and the screening may be delayed due to unforeseen circumstances.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>Will I be informed if my application is rejected?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            Only those who have been selected as Official Creators will be notified by email, and there will be no separate notices for those who are not selected.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>If I get selected as on Official Creator, how long is the membership period?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            The membership period to participate in the program is six (6) months, which shall be automatically renewed unless we receive a written request to leave the program 30 days in advance.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <!-- question -->
+                        <div class="faq-ques">
+                            <div>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiIGZpbGw9IiNGMEYwRjAiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iNyIgc3Ryb2tlPSIjMjkyOTMwIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE5LjExNTIgMjAuMzQ1N0wyNS4yMDcyIDI2LjQzNzciIHN0cm9rZT0iIzI5MjkzMCIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=" alt="">
+                                <span>Can I withdraw my application or leave the program after I get approved?</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <!-- answer -->
+                        <div class="faq-ans">
+                            You may withdraw your application or leave the program. After you submit a request to leave the program to the management team, we will guide you through the process. Please keep in mind that existing benefits will be removed and should you re-apply for participation in the program, acceptance is not guaranteed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- get-start -->
+          <section class="get-start">
+            <div class="inner">
+              <div class="content-text">
+                <h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">
+                    Apply to be a 
+                    <br>
+                    ZEPETO Official Creator
+                </h2>
+                <a class="btn-link btn-apply" data-aos="fade-up" data-aos-duration="1000" href="/console">
+                    Apply now
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-nav">
+            <ul class="footer-nav-left">
+              <li>
+                <a href="/terms">
+                  Terms of use
+                </a>
+              </li>
+              <li>
+                <a href="https://support.zepeto.me/hc/en-us/articles/360050411493">
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <a href="https://support.zepeto.me">
+                  Contact us
+                </a>
+              </li>
+              <li>
+                <a href="/credits">
+                  Credits
+                </a>
+              </li>
+            </ul>
+            <!-- social -->
+            <ul class="footer-nav-right">
+              <li>
+                <a href="https://www.instagram.com/zepeto.official/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/zepeto_official">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/c/ZEPETO_official">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@zepeto.official.tt">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="copy global-show">© NAVER Z Corp. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+        
+        const faqElements = $$('.faq-item');
+        faqElements.forEach((item, index) => {
+
+            item.onclick = function () {
+                if (this.classList[1]) {
+                    this.classList.remove('show')
+                } else {
+                    this.classList.add('show')
+                }
+            }
+        })
+      </script>
+    </body>
+</html>
