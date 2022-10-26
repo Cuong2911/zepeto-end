@@ -135,3 +135,9 @@ section .content-text .content-desc {
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
+/* page no navbar */
+main.page-no-navbar {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--height-header);
+}

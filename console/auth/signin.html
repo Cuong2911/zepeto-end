@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title title="ZEPETO studio">ZEPETO studio</title>
+        <!-- link css -->
+        <link rel="icon" type="image/x-icon" href="../../assets/images/logos/favicon.ico">
+        <!-- link font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!-- reset css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- base css -->
+        <link rel="stylesheet" href="../../assets/css/base.css">
+        <!-- page css -->
+        <link rel="stylesheet" href="../../assets/css/page/styles.css">
+        <!-- home css -->
+        <link rel="stylesheet" href="../../assets/css/sigin/signin.css">
+
+        <!-- fade-in css -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- slider -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+      <!-- header -->
+      <header class="header white-theme" >
+        <div class="inner">
+          <a href="../../index.html" class="header-logo">
+            <img src="../../assets/images/logos/logo-1.png" alt="logo">
+          </a>
+        </div>
+        
+      </header>
+      
+      <!-- main -->
+      <main class="page-no-navbar">
+        <div class="signin-box">
+            <div class="inner">
+                <h2 class="signin-title">Enter your ZEPETO account</h2>
+                <!-- sign in form -->
+                <form>
+                    <ul class="form-tab">
+                        <li class="tab-item active" id="tab-login">
+                            <button onclick="onSwapLogin(event)">Login</button>
+                        </li>
+                        <li class="tab-item" id="tab-register">
+                            <button onclick="onSwapRegister(event)">Register</button>
+                        </li>
+                    </ul>
+                    <!-- form input -->
+                    <div class="form-input">
+                        <!-- login -->
+                        <div class="form-login">
+                            <div class="form-input-box">
+                                <input class="form-input" type="text" placeholder="Enter your mail or phone">
+                            </div>
+
+                            <div class="form-input-box">
+                                <input class="form-input" type="password" placeholder="Enter your password">
+                            </div>
+                            <input class="form-submit" type="submit" value="Login" onclick="onLogin(event)">
+                        </div>
+                        <!-- register -->
+                        <div class="form-register hidden">
+                            <div class="form-input-box">
+                                <input class="form-input" type="text" placeholder="Enter your name">
+                            </div>
+                            <div class="form-input-box">
+                                <input class="form-input" type="text" placeholder="Enter your mail or phone">
+                            </div>
+                            <div class="form-input-box">
+                                <input class="form-input" type="password" placeholder="Enter your password">
+                            </div>
+                            <input class="form-submit" type="submit" value="Register" onclick="onRegister(event)">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </main>
+      
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <!-- swap sign form  -->
+      <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        function onSwapLogin(e) {
+            e.preventDefault();
+            $('#tab-register').classList.remove('active');
+            $('.form-register').classList.add('hidden');
+            $('#tab-login').classList.add('active');
+            $('.form-login').classList.remove('hidden');
+            $('.form-login input').focus();
+            $$('.form-login input')[0].value = '';
+            $$('.form-login input')[1].value = '';
+        }
+        function onSwapRegister(e) {
+            e.preventDefault();
+            $('#tab-login').classList.remove('active');
+            $('.form-login').classList.add('hidden');
+            $('#tab-register').classList.add('active');
+            $('.form-register').classList.remove('hidden');
+            $('.form-register input').focus();
+            $$('.form-register input')[0].value = '';
+            $$('.form-register input')[1].value = '';
+            $$('.form-register input')[2].value = '';
+
+        }
+      </script>
+      <!-- submit sign form -->
+      <script>
+        function onLogin(e) {
+            e.preventDefault();
+            const user = $$('.form-login .form-input')[0].value;
+            const pass = $$('.form-login .form-input')[1].value;
+            if (!user || !pass) {
+                alert('Please enter input!');
+                return false;
+            }
+
+            const accounts = localStorage.getItem('zepeto-accout') ? JSON.parse(localStorage.getItem('zepeto-accout')) : [];
+
+            const isLogin = accounts.some(acc => {
+                return acc.user === user && acc.pass === pass;
+            });
+            if(!isLogin) {
+                alert('Account does not exist!');
+                return false;
+            }
+            if (isLogin) {
+                alert('login successful');
+                window.location.replace("../../index.html");
+            }
+            
+        }
+        function onRegister(e) {
+            e.preventDefault();
+            const name = $$('.form-register .form-input')[0].value;
+            const user = $$('.form-register .form-input')[1].value;
+            const pass = $$('.form-register .form-input')[2].value;
+            
+            const acc = {name, user, pass}
+            if (!name || !user || !pass) {
+                alert('Please enter input!');
+                return false;
+            }
+
+            const accounts = localStorage.getItem('zepeto-accout') ? JSON.parse(localStorage.getItem('zepeto-accout')) : [];
+
+            const isAccoutExists = accounts.some(acc => {
+                return acc.user === user;
+            });
+            if(isAccoutExists) {
+                alert('Account already exists! Please use another phone/email');
+                return false;
+            } else {
+                accounts.push(acc);
+            }
+            localStorage.setItem('zepeto-accout', JSON.stringify(accounts));
+            alert('register successful!');
+            onSwapLogin(e);
+            $$('.form-register .form-input')[0].value = '';
+            $$('.form-register .form-input')[1].value = '';
+            $$('.form-register .form-input')[2].value = '';
+        }
+      </script>
+    </body>
+</html>
