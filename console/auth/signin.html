@@ -131,6 +131,11 @@
             const accounts = localStorage.getItem('zepeto-accout') ? JSON.parse(localStorage.getItem('zepeto-accout')) : [];
 
             const isLogin = accounts.some(acc => {
+                if( acc.user === user && acc.pass === pass ){
+                    localStorage.setItem('zepeto-user', JSON.stringify({
+                        name: acc.name,
+                    }));
+                }
                 return acc.user === user && acc.pass === pass;
             });
             if (!isLogin) {
