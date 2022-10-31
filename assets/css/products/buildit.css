@@ -1,3 +1,4 @@
+@import './res/buildit.css';
 .main-home.buildit {
     height: 450px;
 }
@@ -5,9 +6,6 @@
     margin-left: 12px;
 }
 /* video section */
-.video-section .inner {
-    padding: 115px;
-}
 .video-section .video-box {
     position: relative;
     width: 100%;
@@ -31,7 +29,6 @@
 .text-visual .inner {
     max-width: 1264px;
     padding: 0px 40px;
-    height: 447px;
     overflow: hidden;
     display: flex;
     align-items: center;

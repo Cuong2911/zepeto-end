@@ -7,7 +7,7 @@ header.header {
     color: var(--text-color);
     z-index: 1000;
 }
-header.header .inner {
+header.header>.inner {
     display: flex;  
     align-self: center;
     justify-content:space-between; 
@@ -72,4 +72,43 @@ header.header.white-theme .btn-notice {
 header.header.blue-theme {
     background-color: var(--color-primary-1);
 }
+header.header.white-theme .menu-show{
+    color: #000;
+}
 
+/* res */
+/* pc */
+@media (min-width: 1024px) {
+    .menu-show {
+        display: none;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    header.header>.inner {
+        margin-left: 60px;
+    }
+    .menu-show {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 24px;
+        font-size: 24px;
+    }
+}
+/* mobile */
+@media (max-width: 739px) {
+    header.header>.inner {
+        margin-left: 60px;
+    }
+    .menu-show {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 24px;
+        font-size: 24px;
+    }
+    .btn-manage {
+        display: none;
+    }
+}

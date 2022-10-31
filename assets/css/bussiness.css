@@ -26,12 +26,14 @@
     max-width: 500px;
 }
 .text-visual .inner .content-sub-title {
+    display: block;
     font-size: 48px;
     line-height: 60px;
     font-weight: 700;
     opacity: 0;
 }
 .text-visual .inner .content-title {
+    display: block;
     font-size: 22px;
     line-height: 30px;
     font-weight: normal;
@@ -94,6 +96,7 @@
     margin: 0px auto;
     padding: 16px 8px 0;
     text-align: start;
+    flex: 1;
 }
 .stories-box .tag-title {
     font-size: 28px;
@@ -117,4 +120,97 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+/* res */
+/* pc */
+@media (min-width: 1024px) {
+
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .text-visual:nth-child(2) .inner {
+        flex-direction: column;
+    }
+    .text-visual:nth-child(3) .inner {
+        flex-direction: column-reverse;
+    }
+    .text-visual .inner {
+        height: auto;
+        padding: 88px 32px 88px;
+    }
+    .stories-box .tag-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        width: 90%;
+        margin: auto;
+    }
+    .stories-box .tag-item {
+        width: auto;
+    }
+}
+/* mobile */
+@media (max-width: 739px) {
+    .text-visual:nth-child(2) .inner {
+        flex-direction: column;
+    }
+    .text-visual:nth-child(3) .inner {
+        flex-direction: column-reverse;
+    }
+    .text-visual .inner {
+        height: auto;
+        padding: 88px 32px 88px;
+    }
+    .text-visual .inner .content-sub-title {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .text-visual .inner .content-title {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    }
+    .stories-box .tag-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 36px;
+        width: 90%;
+        margin: auto;
+    }
+    .stories-box .tag-item {
+        width: auto;
+    }
+    .stories-box .tag-content {
+        padding: 16px 18px;
+    }
+    .stories-box .tag-icon {
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+    .stories-box .tag-icon img{
+        width: 32px;
+        height: 32px;
+    }
+    .stories-box .tag-info{
+        margin: 0;
+    }
+    .stories-box .tag-title {
+        margin-top: 4px;
+        padding-left: 2px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .stories-box .tag-desc {
+        margin-top: 4px;
+        padding-left: 2px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .stories-box .tag-img {
+        height: auto;
+        justify-self: end;
+    }
 }

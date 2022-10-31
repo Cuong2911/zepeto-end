@@ -1,15 +1,29 @@
 nav.navbar {
-    position: fixed;
-    top: var(--height-header);
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    top: 100%;
+    width: var(--width-navbar-menu);
+    height: calc(100vh - var(--height-header));
+}
+nav.navbar>.inner {
+    box-sizing: border-box;
+    padding: 12px;
+    height: 100%;
+    width: 100%;
     background-color:var(--color-primary);
     color: var(--text-color);
-    width: var(--width-navbar-menu);
-
+    position: absolute;
+    z-index: 1;
 }
-nav.navbar .inner {
-    margin: 12px;
+nav.navbar>.nav-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.564);
+}
+nav.navbar .nav-close {
+    font-size: 26px;
+    padding: 12px;
+    display: none;
 }
 nav.navbar .menu {
     
@@ -61,13 +75,16 @@ nav.navbar .sub-menu-item-link {
     padding: 8px 12px;
 }
 nav.navbar .sub-menu-item-link:hover {
-    background-color: var(--color-bg-active);
-    color: var(--text-color-active);
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 /* white theme */
-nav.navbar.white-theme {
+nav.navbar.white-theme .inner {
     background-color:var(--color-light);
+    color: var(--text-color-light);
+}
+nav.navbar.white-theme .nav-close {
     color: var(--text-color-light);
 }
 nav.navbar.white-theme .menu-item .menu-item-link {
@@ -88,12 +105,50 @@ nav.navbar.white-theme .menu-item.active .menu-item-link{
     background-color: var(--color-primary);
     color: var(--text-color);
 }
+
+
 /* blue theme */
-nav.navbar.blue-theme {
+nav.navbar.blue-theme>.inner {
     background-color:var(--color-primary-1);
     color: var(--text-color-light);
 }
 nav.navbar.blue-theme .sub-menu-item-link:hover {
     font-weight: 600;
     text-decoration: underline;
+}
+/* pc */
+@media (min-width: 1024px) {
+    nav.navbar .nav-overlay {
+        display: none;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    nav.navbar {
+        top: 0;
+        width: 38%;
+        height: 100vh;
+        display: none;
+    }
+    nav.navbar .inner {
+        animation: fade-right 0.2s ease-in;
+    }
+    nav.navbar .nav-close {
+        display: block;
+    }
+}
+/* mobile */
+@media (max-width: 739px) {
+    nav.navbar {
+        top: 0;
+        width: 75%;
+        height: 100vh;
+        display: none;
+    }
+    nav.navbar .inner {
+        animation: fade-right 0.2s ease-in;
+    }
+    nav.navbar .nav-close {
+        display: block;
+    }
 }

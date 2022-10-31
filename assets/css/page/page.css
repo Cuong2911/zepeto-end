@@ -11,7 +11,6 @@ main.page {
     flex-direction: column;
 }
 .main-home {
-    height: 545px;
     overflow: hidden;
     position: relative;
     -webkit-background-position: 50% 50%;
@@ -31,6 +30,7 @@ main.page {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    
 }
 .bg-image {
     position: absolute;
@@ -43,6 +43,7 @@ main.page {
     background-image: url(../../images/home/bg-main-home.jpg);
     background-size: cover;
     cursor: pointer;
+    background-position: center;
 }
 .bg-video {
     width: 100%;
@@ -119,6 +120,7 @@ section .content-text {
     max-width: 880px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 12px;
 }
 section .content-text .content-title {
     font-size: 56px;
@@ -140,4 +142,63 @@ main.page-no-navbar {
     display: flex;
     flex-direction: column;
     padding-top: var(--height-header);
+}
+
+/* res */
+/* pc */
+@media (min-width: 1024px) {
+    .main-home {
+        height: 545px;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .main-home {
+        height: 75vw;
+    }
+    main.page {
+        padding-left: 0;
+    }
+    section .content-text .content-title  {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    section .content-text .content-desc {
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+}
+/* mobile */
+@media (max-width: 739px) {
+    main.page {
+        padding-left: 0;
+    }
+    .main-home {
+        height: 400px;
+    }
+    .main-home .content-text .content-title {
+        font-size: 40px!important;
+        line-height: 48px!important;
+    }
+    .main-home .btn-link {
+        margin-top: 28px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        border-radius: 34px;
+        font-size: 13px;
+        box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+    }
+    
+    section .content-text .content-title  {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    section .content-text .content-desc {
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 22px;
+    }
 }

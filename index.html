@@ -18,7 +18,6 @@
         <link rel="stylesheet" href="./assets/css/page/styles.css">
         <!-- home css -->
         <link rel="stylesheet" href="./assets/css/home/styles.css">
-
         <!-- fade-in css -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- slider -->
@@ -30,6 +29,7 @@
     <body>
       <!-- header -->
       <header class="header">
+        <a class="menu-show"><i class="fa-solid fa-bars"></i></a>
         <div class="inner">
           <a href="#" class="header-logo">
             <img src="./assets/images/logos/logo-1.png" alt="logo">
@@ -43,135 +43,137 @@
             </a>
           </div>
         </div>
-        
+        <!-- navbar menu -->
+        <nav class="navbar">
+          <div class="inner">
+            <a class="nav-close"><i class="fa-solid fa-xmark"></i></a>
+            <ul class="menu">
+              <li class="menu-item">
+                <a class="menu-item-link">
+                  <div>
+                    <span class="icon">
+                      <i class="fa-solid fa-lightbulb"></i>
+                    </span>
+                    Contents
+                  </div>
+                  <span class="icon-down">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </a>
+                <ul class="sub-menu">
+                  <li class="">
+                    <a class="sub-menu-item-link" href="./products/item.html">
+                      <div>
+                        <span class="icon">
+                          <i class="fa-solid fa-shirt"></i>
+                        </span>
+                        Items
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="sub-menu-item-link" href="./products/world.html">
+                      <div>
+                        <span class="icon">
+                          <i class="fa-solid fa-earth-asia"></i>
+                        </span>
+                        Worlds
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="sub-menu-item-link" href="./products/live.html">
+                      <div>
+                        <span class="icon">
+                          <i class="fa-solid fa-wifi"></i>
+                        </span>
+                        Live
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="sub-menu-item-link" href="./products/buildit.html">
+                      <div>
+                        <span class="icon">
+                          <i class="fa-solid fa-wrench"></i>
+                        </span>
+                        Build it
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item-link" href="./program/creator.html">
+                  <div>
+                    <span class="icon">
+                      <i class="fa-solid fa-square-plus"></i>
+                    </span>
+                    Creator Program
+                  </div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item-link" href="./bussiness.html">
+                  <div>
+                    <span class="icon">
+                      <i class="fa-solid fa-briefcase"></i>
+                    </span>
+                    Business
+                  </div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item-link">
+                  <div>
+                    <span class="icon">
+                      <i class="fa-sharp fa-solid fa-circle-question"></i>
+                    </span>
+                    Guides
+                  </div>
+                  <span class="icon-down">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </a>
+                <ul class="sub-menu">
+                  <li class="">
+                    <a class="sub-menu-item-link">
+                      <div>
+                        <span class="icon">
+                          <i class="fa-sharp fa-solid fa-circle-question"></i>
+                        </span>
+                        Guides
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="sub-menu-item-link" href="https://www.udemy.com/user/artxcampus2/">
+                      <div>
+                        <span class="icon">
+                          <i class="fa-solid fa-graduation-cap"></i>
+                        </span>
+                        Learn
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item-link" href="https://support.zepeto.me/hc/en-us">
+                  <div>
+                    <span class="icon">
+                      <i class="fa-solid fa-circle-info"></i>
+                    </span>
+                    Support
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-overlay"></div>
+        </nav>
       </header>
-      <!-- navbar menu -->
-      <nav class="navbar">
-        <div class="inner">
-          <ul class="menu">
-            <li class="menu-item">
-              <a class="menu-item-link">
-                <div>
-                  <span class="icon">
-                    <i class="fa-solid fa-lightbulb"></i>
-                  </span>
-                  Contents
-                </div>
-                <span class="icon-down">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </a>
-              <ul class="sub-menu">
-                <li class="">
-                  <a class="sub-menu-item-link" href="./products/item.html">
-                    <div>
-                      <span class="icon">
-                        <i class="fa-solid fa-shirt"></i>
-                      </span>
-                      Items
-                    </div>
-                  </a>
-                </li>
-                <li class="">
-                  <a class="sub-menu-item-link" href="./products/world.html">
-                    <div>
-                      <span class="icon">
-                        <i class="fa-solid fa-earth-asia"></i>
-                      </span>
-                      Worlds
-                    </div>
-                  </a>
-                </li>
-                <li class="">
-                  <a class="sub-menu-item-link" href="./products/live.html">
-                    <div>
-                      <span class="icon">
-                        <i class="fa-solid fa-wifi"></i>
-                      </span>
-                      Live
-                    </div>
-                  </a>
-                </li>
-                <li class="">
-                  <a class="sub-menu-item-link" href="./products/buildit.html">
-                    <div>
-                      <span class="icon">
-                        <i class="fa-solid fa-wrench"></i>
-                      </span>
-                      Build it
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item-link" href="./program/creator.html">
-                <div>
-                  <span class="icon">
-                    <i class="fa-solid fa-square-plus"></i>
-                  </span>
-                  Creator Program
-                </div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item-link" href="./bussiness.html">
-                <div>
-                  <span class="icon">
-                    <i class="fa-solid fa-briefcase"></i>
-                  </span>
-                  Business
-                </div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item-link">
-                <div>
-                  <span class="icon">
-                    <i class="fa-sharp fa-solid fa-circle-question"></i>
-                  </span>
-                  Guides
-                </div>
-                <span class="icon-down">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </a>
-              <ul class="sub-menu">
-                <li class="">
-                  <a class="sub-menu-item-link">
-                    <div>
-                      <span class="icon">
-                        <i class="fa-sharp fa-solid fa-circle-question"></i>
-                      </span>
-                      Guides
-                    </div>
-                  </a>
-                </li>
-                <li class="">
-                  <a class="sub-menu-item-link" href="https://www.udemy.com/user/artxcampus2/">
-                    <div>
-                      <span class="icon">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                      </span>
-                      Learn
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item-link" href="https://support.zepeto.me/hc/en-us">
-                <div>
-                  <span class="icon">
-                    <i class="fa-solid fa-circle-info"></i>
-                  </span>
-                  Support
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      
       <!-- main -->
       <main class="page">
         
@@ -197,7 +199,7 @@
                   <span>All you've imagined</span>
                   <span>At ZEPETO Studio.</span>
                 </h2>
-                <a class="btn-link " data-aos="fade-up" data-aos-duration="1000" href="./console">Get Started</a>
+                <a class="btn-link " data-aos="fade-up" data-aos-duration="1000" href="./console/auth/signin.html">Get Started</a>
               </div>
             </div>
           </div>
@@ -269,30 +271,39 @@
                     <span class="icon-item">
                       <i class="fa-solid fa-shirt"></i>
                     </span>
-                    <h3 class="service-name">Items</h3>
-                    <p class="service-desc">Create fashion items and earn profits.</p>
-                    <a class="btn-more" href="./products/item">
+                    <div>
+                      <h3 class="service-name">Items</h3>
+                      <p class="service-desc">Create fashion items and earn profits.</p>
+                    </div>
+                    <a class="btn-more" href="./products/item.html">
                       <span class="text">Learn more</span>
+                      <i class="fa-solid fa-chevron-right"></i>
                     </a>
                   </li>
                   <li class="service-item">
                     <span class="icon-item">
                       <i class="fa-solid fa-earth-asia"></i>
                     </span>
-                    <h3 class="service-name">World</h3>
-                    <p class="service-desc">Create a World filled with your idea inside ZEPETO.</p>
-                    <a class="btn-more" href="./products/item">
+                    <div>
+                      <h3 class="service-name">World</h3>
+                      <p class="service-desc">Create a World filled with your idea inside ZEPETO.</p>
+                    </div>
+                    <a class="btn-more" href="./products/item.html">
                       <span class="text">Learn more</span>
+                      <i class="fa-solid fa-chevron-right"></i>
                     </a>
                   </li>
                   <li class="service-item">
                     <span class="icon-item">
                       <i class="fa-solid fa-wifi"></i>
                     </span>
-                    <h3 class="service-name">Live</h3>
-                    <p class="service-desc">Broadcast in real-time with users across the world.</p>
-                    <a class="btn-more" href="./products/item">
+                    <div>
+                      <h3 class="service-name">Live</h3>
+                      <p class="service-desc">Broadcast in real-time with users across the world.</p>
+                    </div>
+                    <a class="btn-more" href="./products/item.html">
                       <span class="text">Learn more</span>
+                      <i class="fa-solid fa-chevron-right"></i>
                     </a>
                   </li>
                 </ul>
@@ -413,7 +424,7 @@
                   <br/>
                   If you have any questions, please contact [Support] at the top of the website.
                 </p>
-                <a class="btn-start" data-aos="fade-up" data-aos-duration="1000" href="./console">
+                <a class="btn-start" data-aos="fade-up" data-aos-duration="1000" href="./console/auth/signin.html">
                   <span class="text">
                     Get Started
                   </span>
@@ -515,8 +526,9 @@
           <p class="copy global-show">© NAVER Z Corp. All rights reserved.</p>
         </div>
       </footer>
-
+      <script src="./assets/js/base.js"></script>
       <script src="./assets/js/home/index.js"></script>
+      <script src="./assets/js/navbar.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init();
@@ -528,8 +540,7 @@
             delay: 3000,
             disableOnInteraction: false,
           },
-          slidesPerView: 3,
-          spaceBetween: 25,
+          centeredSlides: true,
           loop: true,
           centerSlide: 'true',
           fade: 'true',
@@ -537,13 +548,16 @@
 
           breakpoints:{
               0: {
-                  slidesPerView: 1,
+                  slidesPerView: 1.5,
+                  spaceBetween: 25,
               },
-              520: {
-                  slidesPerView: 2,
-              },
-              950: {
+              740: {
                   slidesPerView: 3,
+                  spaceBetween: 18,
+              },
+              1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 25,
               },
           },
         });

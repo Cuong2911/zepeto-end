@@ -1,0 +1,72 @@
+/* pc */
+@media (min-width: 1024px) {
+    /* template */
+    .template-editor .video-box {
+        margin: 80px auto 0;
+        max-width: 1018px;
+    }
+    /* bussiness */
+    .teams-box .teams-list li {
+        width: 60px;
+        height: 60px;
+    }
+    .teams-img {
+        width: 100%;
+        height: 570px;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* template */
+    .template-editor .video-box {
+        margin: 20px auto 0;
+        width: 80%;
+    }
+    /* standard */
+    .standards .video-box {
+        width: 32%;
+        margin: 20px auto 0;
+    }
+    .standards .video-box img {
+        width: 100%;
+    }
+    /* bussiness */
+    .teams-box .teams-list li {
+        width: 40px;
+        height: 40px;
+    }
+    .teams-img {
+        width: 60%;
+    }
+}
+/* mobile */
+@media (max-width: 739px) {
+    .main-home .content-text {
+        color: #fff;
+    }
+    .main-home .btn-link {
+        color: #000;
+        background-color: #fff;
+    }
+    /* template */
+    .template-editor .video-box {
+        margin: 20px auto 0;
+        width: 100%;
+    }
+    /* standard */
+    .standards .video-box {
+        width: 60%;
+        margin: 45px auto 0;
+    }
+    .standards .video-box img {
+        width: 100%;
+    }
+    /* bussiness */
+    .teams-box .teams-list li {
+        width: 40px;
+        height: 40px;
+    }
+    .teams-img {
+        width: 100%;
+    }
+}

@@ -1,3 +1,4 @@
+@import './res.css';
 /* creator */
 .creators .img-box {
     margin: 80px auto 60px;
@@ -61,20 +62,16 @@
 .reality .service-item {
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 42px 32px 32px;
     border-radius: 16px;
     background-color: #fff;
     width: calc(33.333% - 36px);
-    max-width: 320px;
-    height: 416px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     vertical-align: middle;
     font-size: 24px;
     box-shadow: 0 0 10px rgb(192, 192, 192);
-
 }
 .reality .icon-item {
     display: flex;
@@ -88,7 +85,6 @@
     font-size: 40px;
 }
 .reality .service-item .service-name {
-    margin-top: 32px;
     font-size: 28px;
     line-height: 36px;
     font-weight: 700;
@@ -114,6 +110,7 @@
 }
 /* slider */
 .slide-container{
+    margin-top: 24px;
     max-width: 1120px;
     width: 100%;
     padding: 40px 0;
@@ -122,11 +119,7 @@
     margin: 0 40px;
     overflow: hidden;
 }
-.card {
-    width: 330px !important;
-    height: 415px !important;
-    margin-right: 25px;
-}
+
 .image-content,
 .card-content{
     display: flex;
@@ -137,17 +130,15 @@
 }
 .image-content{
     position: relative;
-    height: 306px;
     justify-content: center;
     row-gap: 5px;
     padding: 25px 0;
-}
-.card-image{
-    position: relative;
-    height: 250px;
-    width: 250px;
     border-radius: 50%;
-    background: #FFF;
+    overflow: hidden;
+}
+.card-image {
+    position: relative;
+    width: 100%;
     padding: 3px;
 }
 .card-image img{
@@ -155,21 +146,13 @@
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 0 10px #000;
 }
 .name{
     font-size: 18px;
     font-weight: 500;
     color: #6b6b6b;
 }
-.swiper-slide-next .card-image {
-    height: 300px;
-    width: 300px;
-}
-.swiper-slide-next .name {
-    font-size: 24px;
-    color: #000;
-}
+
 /* profit */
 .profit {
     background-color: #f8f8fa;
@@ -181,6 +164,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40%;
+    margin: auto;
+}
+.profit .profit-gif img {
+    width: 100%;
 }
 /* get start */
 .section.get-start .content-text {

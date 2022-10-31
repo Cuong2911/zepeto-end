@@ -42,3 +42,38 @@ footer .copy {
     line-height: 18px;
     color: #99999c;
 }
+/* res */
+/* pc */
+@media (min-width: 1024px) {
+    
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    footer {
+        padding-left: 0;
+    }
+}
+/* mobile */
+@media (max-width: 739px) {
+    footer {
+        padding-left: 0;
+    }
+    footer .footer-nav {
+        flex-direction: column-reverse;
+    }
+    footer .footer-nav .footer-nav-left {
+        flex-direction: column;
+    }
+    footer .footer-nav ul {
+        margin: 12px 0;
+    }
+    footer .footer-nav li {
+        text-align: center;
+    }
+    footer .footer-nav .footer-nav-left li + li {
+        border-left: unset;
+    }
+    footer .copy {
+        text-align: center;
+    }
+}
